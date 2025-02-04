@@ -44,11 +44,45 @@ int main(int argc, char* argv[]) {
      using in printf as a %d or %i    
 */
      int x = 123456;
-     printf("x: %d\n", x);
+     printf("\nx: %d\n", x);
      
-     return 0;
 
 /*
     3.) Float
+     Holding point integers like 3.14 float has 6 precision.
+     holding minimum 4 byte which 32 bit format specifier is %f
+     for 5 precision %.5f
 */
+
+    float pi = 3.14159265358979323846;
+    float num = 2.71;
+
+    printf("\npi: %.2f\n", pi);
+    printf("pi: %.10f\n", pi);
+
+    printf("num: %f\n", num);
+    printf("num: %.15f\n\n", num);
+
+/*
+    4) Double
+     It's has 10 precision minimum 8 byte which 64 bit.
+
+*/
+
+    double double_pi = 3.14159265358979323846;
+
+    printf("double_pi: %f\n", double_pi);
+    printf("double_pi: %.10f\n", double_pi);
+    printf("double_pi: %.15f\n\n", double_pi);
+
+// void used in functions and pointers in generally
+
+    printf("%d\n", sizeof(char));
+    printf("%d\n", sizeof(int));
+    printf("%d\n", sizeof(float));
+    printf("%d\n", sizeof(double));
+    printf("%d\n", sizeof(size_t));
+    printf("%d\n", sizeof(long long int));
+    
+    return 0;
 }
