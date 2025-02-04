@@ -1,6 +1,6 @@
 CC = gcc
 #INCLUDE = include
-CFLAGS = -Wall -Wextra -std=c17 -g
+CFLAGS = -Wall -Werror -Wextra -std=c23 -g
 SRC    = main.c
 TARGET = app
 
